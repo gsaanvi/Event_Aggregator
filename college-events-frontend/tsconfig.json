@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "target": "ES6",
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/components/*": [
+        "./feed/components/*",
+        "./auth/components/*",
+        "./land/components/*",
+        "./detail/components/*",
+        "./my_list/components/*",
+        "./create_event/components/*",
+        "./admin_dashboard/components/*"
+      ],
+      "@/hooks/*": [
+        "./feed/hooks/*",
+        "./auth/hooks/*",
+        "./my_list/hooks/*",
+        "./admin_dashboard/hooks/*",
+        "./land/hooks/*",
+        "./detail/hooks/*",
+        "./create_event/hooks/*"
+      ],
+      "@/lib/*": [
+        "./auth/lib/*",
+        "./feed/lib/*",
+        "./land/lib/*",
+        "./detail/lib/*",
+        "./my_list/lib/*",
+        "./create_event/lib/*",
+        "./admin_dashboard/lib/*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
